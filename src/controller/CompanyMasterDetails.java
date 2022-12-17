@@ -19,5 +19,10 @@ public class CompanyMasterDetails {
                 "employeeMasterDetails=" + employeeMasterDetails +
                 '}';
     }
+
+    @Autowired
+    public void setEmployeeMasterDetails(EmployeeMasterDetails employeeMasterDetails) {
+        this.employeeMasterDetails = employeeMasterDetails;
+    }
 }
 
