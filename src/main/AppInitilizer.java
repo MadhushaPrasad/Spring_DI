@@ -2,6 +2,7 @@ package main;
 
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import type.type03.fieldbasedDI.Boy;
 
 public class AppInitilizer {
     public static void main(String[] args) {
@@ -10,7 +11,8 @@ public class AppInitilizer {
         ctx.refresh();
         ctx.registerShutdownHook();
 
-
+        Boy bean = ctx.getBean(Boy.class);
+        bean.kissing();
     }
 
 }
